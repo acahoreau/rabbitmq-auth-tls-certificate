@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  rabbitmq:
+    image: rabbitmq:3.7-management
+    ports:
+      - 15671:15671
+      - 15672:15672
+      - 5671:5671
+      - 5672:5672
+    volumes:
+      - ./conf:/etc/rabbitmq
+      - ./definitions.json:/opt/definitions.json
+      - ./server:/opt/certs/server
+      - ./testca:/opt/certs/ca
+

@@ -1,0 +1,2 @@
+V	200901093357Z		07	unknown	/CN=zenika-server/O=server
+V	200901093906Z		08	unknown	/CN=zenika/O=client
